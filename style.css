@@ -1,267 +1,215 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', 'sans-serif';
-    box-sizing: border-box;
-}
-
-body {
-    background: #000;
-    color: #fff;
-}
-
-.header {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images1.jpeg);
-    background-size: cover;
-    background-position: center;
-    padding: 10px 8%;
-    position: relative;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
-}
-
-.logo {
-    width: 150px;
-    cursor: pointer;
-    background-color: black;
-    background: transparent;
-    color: #000;
-}
-
-nav button {
-    border: 1px;
-    outline: 1px;
-    background: #db0001;
-    color: #fff;
-    padding: 7px 20px;
-    font-size: 12px;
-    border-radius: 4px;
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-.language-btn {
-    display: inline-flex;
-    align-items: center;
-    background: black;
-    border: 1px solid white;
-    padding-left: 7px 10px;
-    font-size: 12px;
-}
-
-.language-btn1 {
-    display: inline-flex;
-    align-items: center;
-    background: red;
-    color: white;
-    padding-left: 7px 10px;
-    font-size: 12px;
-}
-
-.language-btn-img {
-    width: 50px;
-    height: 10px;
-    margin-left: 10px;
-}
-
-.header-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    margin-top: 100px;
-}
-
-.header-content h1 {
-    font-size: 60px;
-    line-height: 70px;
-    font-weight: 600;
-    max-width: 650px;
-}
-
-.header-content h3 {
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-
-.email-signup {
-    background: #fff;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-    overflow: hidden;
-}
-
-.email-signup input {
-    flex: 1;
-    border: 0;
-    outline: 0;
-    margin-left: 20px;
-}
-
-.email-signup button {
-    background: #db0001;
-    border: 0;
-    outline: 0;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    padding: 15px 30px;
-}
-
-.features {
-    padding: 50px 12%;
-    font-size: 22px;
-}
-
-.row {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 50px 0;
-}
-
-.text-col {
-    flex-basis: 50%;
-    margin-bottom: 20px;
-}
-
-.img-col {
-    flex-basis: 50%;
-    margin-bottom: 20px;
-}
-
-.img-col img {
-    display: block;
-    width: 90%;
-    margin: auto;
-}
-
-.features h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-.header1 {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(login.jpeg);
-    background-size: cover;
-    background-position: center;
-    padding: 10px 8%;
-    position: relative;
-}
-
-.email-signup {
-    padding: 10px 12%;
-    text-align: center;
-    font-size: 18px;
-}
-
-.header1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    margin-top: 0;
-    font-size: 25px;
-}
-
-.email-Signup {
-    padding: 30px 12%;
-    text-align: center;
-    font-size: 25px;
-}
-
-.email-Signup input {
-    font-size: 27px;
-}
-
-.faq h2 {
-    font-weight: 500;
-    font-size: 40px;
-}
-
-.accordion {
-    margin: 60px auto;
-    width: 100%;
-    max-width: 750px;
-}
-
-.accordion li {
-    list-style: none;
-    width: 100%;
-    padding: 5px;
-}
-
-.accordion li label {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 500;
-    background: #303030;
-    margin-bottom: 2px;
-    cursor: pointer;
-    position: relative;
-}
-
-label::after {
-    content: '+';
-    font-size: 34px;
-    position: absolute;
-    right: 20px;
-    transition: transform 0.5s;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-.accordion .content {
-    background: #303030;
-    text-align: left;
-    padding: 0 20px;
-    max-height: 0;
-    overflow: hidden;
-}
-
-.accordion input[type="radio"]:checked+label+.content {
-    max-height: 600px;
-    padding: 30px 20px;
-}
-
-.accordion input[type="radio"]:checked+label::after {
-    transform: rotate(135deg);
-}
-
-.email-Signup button {
-    background: #db0001;
-    border: 0;
-    outline: 0;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    padding: 15px 30px;
-}
-
-.faq .email-signup {
-    max-width: 600px;
-    margin: 20px auto 60px;
-}
-
-.faq small {
-    font-size: 13px;
-}
+                                * {
+                                    margin: 0;
+                                    background-color: black;
+                                }
+                                
+                                body {
+                                    font-family: 'Roboto', sans-serif;
+                                }
+                                
+                                .navbar {
+                                    width: 100%;
+                                    min-height: 50px;
+                                    background-color: black;
+                                }
+                                
+                                .navbar-container {
+                                    display: flex;
+                                    align-items: center;
+                                    background-color: black;
+                                    padding: 0 50px;
+                                    height: 100%;
+                                    font-family: 'Sem', sans-serif;
+                                }
+                                
+                                .logo-container {
+                                    flex: 1;
+                                }
+                                
+                                .logo {
+                                    font-size: 30px;
+                                    color: #4dbf00;
+                                }
+                                
+                                .menu-container {
+                                    flex: 6;
+                                    background-color: black;
+                                    color: white;
+                                }
+                                
+                                .menulist {
+                                    display: flex;
+                                    list-style: none;
+                                }
+                                
+                                .menu-list-item {
+                                    margin-right: 30px;
+                                }
+                                
+                                .menu-list-item.active {
+                                    font-weight: bold;
+                                }
+                                
+                                .profile-container {
+                                    flex: 2;
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                
+                                .profile-text-container {
+                                    margin: 0 20px;
+                                }
+                                
+                                .profile-picture {
+                                    width: 32px;
+                                    height: 32px;
+                                    border-radius: 50%;
+                                    object-fit: cover;
+                                }
+                                
+                                .toggle {
+                                    width: 40px;
+                                    height: 20px;
+                                    background-color: white;
+                                    border-radius: 30px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-around;
+                                    position: relative;
+                                }
+                                
+                                .toggle-icon {
+                                    color: goldenrod;
+                                }
+                                
+                                .toggle-ball {
+                                    width: 18px;
+                                    height: 18px;
+                                    background-color: black;
+                                    position: absolute;
+                                    right: 1px;
+                                    border-radius: 50%;
+                                    cursor: pointer;
+                                }
+                                
+                                .sidebar {
+                                    width: 50px;
+                                    height: 100%;
+                                    background-color: black;
+                                    position: fixed;
+                                    top: 0;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    padding-top: 60px;
+                                }
+                                
+                                .left-menu-icon {
+                                    color: white;
+                                    font-size: 20px;
+                                    margin-bottom: 40px;
+                                }
+                                
+                                .container {
+                                    background-color: #151515;
+                                    min-height: calc(100vh - 50px);
+                                    color: white;
+                                }
+                                
+                                .content-container {
+                                    margin-left: 50px;
+                                }
+                                
+                                .featured-content {
+                                    height: 50vh;
+                                    padding: 50px;
+                                }
+                                
+                                .featued-title {
+                                    width: 200px;
+                                }
+                                
+                                .featured-desc {
+                                    width: 500px;
+                                    color: lightgray;
+                                    margin: 30px 0;
+                                }
+                                
+                                .featured-button {
+                                    background-color: #4dbf00;
+                                    color: white;
+                                    padding: 10px 20px;
+                                    border-radius: 10px;
+                                    border: none;
+                                    outline: none;
+                                    font-weight: bold;
+                                }
+                                
+                                .movie-list-container {
+                                    padding: 0 20px;
+                                }
+                                
+                                .movie-list {
+                                    display: flex;
+                                    align-items: center;
+                                    height: 300px;
+                                }
+                                
+                                .movie-list-item {
+                                    margin-right: 30px;
+                                }
+                                
+                                .movie-list-item:hover.movie-list-item-img {
+                                    transform: scale(1.2);
+                                    margin: 0 30px;
+                                    opacity: 0.5;
+                                }
+                                
+                                .movie-list-item:hover.movie-list-item-title,
+                                .movie-list-item:hover.movie-list-item-desc,
+                                .movie-list-item:hover.movie-list-item-button {
+                                    opacity: 1;
+                                }
+                                
+                                .movie-list-item-img {
+                                    width: 270px;
+                                    height: 200px;
+                                    object-fit: cover;
+                                }
+                                
+                                .movie-list-item-desc {
+                                    background-color: black;
+                                    padding: 0 10px;
+                                    font-size: 14px;
+                                    position: absolute;
+                                    top: 10%;
+                                    left: 50px;
+                                    width: 230px;
+                                    opacity: 0;
+                                    transition: 1s all ease-in-out;
+                                }
+                                
+                                .movie-list-item-button {
+                                    padding: 10px;
+                                    background-color: #4dbf00;
+                                    color: white;
+                                    border-radius: 10px;
+                                    outline: none;
+                                    border: none;
+                                    cursor: pointer;
+                                    position: absolute;
+                                    bottom: 20px;
+                                    left: 50px;
+                                    opacity: 0;
+                                    transition: 1s all ease-in-out;
+                                }
+                                
+                                .arrow {
+                                    font-size: 120px;
+                                    position: absolute;
+                                    top: 90px;
+                                    right: 0;
+                                    color: lightgray;
+                                    opacity: .5;
+                                    cursor: pointer;
+                                }
